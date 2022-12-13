@@ -4,7 +4,7 @@
     include(ROOT_PATH. '/includes/public_functions.php');
 ?>
 
-    <title>GKPT | Accueil</title>
+    <title>Projet0Papier | Accueil</title>
     </head>
 
 <body>

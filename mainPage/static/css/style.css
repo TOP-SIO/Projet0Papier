@@ -54,17 +54,17 @@ form fieldset{
     border-radius: 30px;
     width: 50%;
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 24.6%;
     margin: -25px 0 0 auto;
 }
 
 .thumbnail3{
-    padding-top: 0px;
+    padding-top: 30px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 35%;
 }
 
 /* logo top sio en bas de page */
@@ -82,7 +82,7 @@ form fieldset{
     border: 2px solid var(--red);
     background-color: var(--darkblue);
     color: var(--background);
-    padding: 1% 1%;
+    padding: 1.5% 1%;
     margin: 0px auto;
     border-radius: 15px;
     text-align: center;
@@ -203,7 +203,7 @@ form fieldset{
     align-content: center;
     margin: 20px;
     width: auto;
-    height: auto;
+    height: 22rem;
     padding: 2rem;
     box-shadow: 0 0 40px rgba(0, 0, 0, .5);
     border-radius: 10px;
@@ -214,6 +214,7 @@ form fieldset{
     font-size: 30px;
     text-align: center;
     margin-top: 0px;
+    margin-bottom: 15px;
 }
 
 /* .col-1{

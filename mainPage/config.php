@@ -1,7 +1,7 @@
 <?php
     
     define('ROOT_PATH', realpath(dirname(__FILE__)));
-    define('BASE_URL', 'http://localhost/GKPT/GKPT');
+    define('BASE_URL', 'http://localhost/Projet0Papier/mainPage');
 
     session_start();
     $host = 'localhost';

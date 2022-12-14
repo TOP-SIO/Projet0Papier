@@ -8,7 +8,7 @@
     <body>
         <img src="../static/images/logo ecole.png" class="thumbnail3">
         <!-- a corriger une fois la connexion des utilisateurs est prete -->
-        <?php $t = date("H"); if($t < "20") : ?>
+        <?php $t = date("H"); if($t > "20") : ?>
             <nav align="center" class="Error">
                 <p class="Text2">Erreur</p> 
                 <p class="Text3">Message</p> 

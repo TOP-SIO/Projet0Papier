@@ -5,5 +5,5 @@
    unset($_SESSION["email"]);
    unset($_SESSION["MDP_Utilisateur"]);
    
-   header('Refresh: 2; URL = login.php');
+   header('Refresh: 2; URL = ' .BASE_URL . '/login');
 ?>

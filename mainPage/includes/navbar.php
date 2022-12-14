@@ -7,8 +7,9 @@
     </head>
     <body>
         <nav class="navbar">
-            <img src="<?php echo BASE_URL."/static/images/disconnect.png"?>" class="thumbnail2">
+            <li class="list"><a href=<?php echo BASE_URL."/login" ?>><img src="<?php echo BASE_URL."/static/images/disconnect.png"?>" class="thumbnail2"></a></li>
+            <li class="list"><a href="#DropADocument" class="a">Déposer un document</a></li>
         </nav>
         <img src="<?php echo BASE_URL."/static/images/logo ecole.png"?>" class="thumbnail">
     </body>
-</html>
+</html><

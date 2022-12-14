@@ -22,24 +22,18 @@ include(ROOT_PATH.'/includes/navbar_formateurs.php');
 
 <br> <br>
 
-<?php
-$machines = getSystems();
-
- foreach ($machines as $machine): ?>
+<article class="rectangle-gris">
+    <?php $machines = getSystems();
+    foreach ($machines as $machine): ?>
     <div class="row">
-        <div class="col-1">
-            <h2><?php echo $machine['nom_systeme'] ?></h2>
-            <h3><?php echo $machine['description'] ?></h3>
-            <p><?php echo $machine['description'] ?></p>
-            <h4></h4>
-            <button type="button" onclick="location.href='<?php echo BASE_URL. '/HTML/'. $machine['lien']?>'"> Voir <?php echo $machine['nom_systeme'] ?></button>
-        </div>
-        <div class="col-2">
-            <img class="bigThumbnail" src="<?php echo BASE_URL. '/static/images/photo_machines/'. $machine['photo']?>">
+        <h2><?php echo $machine['nom_systeme'] ?></h2>
+        <img class="bigThumbnail" src="<?php echo BASE_URL. '/static/images/photo_machines/'. $machine['photo']?>"></br>
+        <div class="row2">
+            <button type="button" class="button-doc" onclick="location.href='<?php echo BASE_URL. '/systeme/'. $machine['lien']?>'">Pédago </button>
+            <button type="button" class="button-doc" onclick="location.href='<?php echo BASE_URL. '/systeme/'. $machine['lien']?>'">Technique</button>
         </div>
     </div>
-<?php endforeach
-?>
+    <?php endforeach ?>
 </div>
 <!-- <div class="row">
     <div class="col-1">

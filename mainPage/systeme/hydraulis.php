@@ -8,7 +8,7 @@
 <title>Hydraulis</title>
 </head>
 <header>
-    <h1 class="title" style="text-align: center;">Hydraulis</h1>
+    <!-- <h1 class="title" style="text-align: center;">Hydraulis</h1> -->
 </header>
 <body> 
 
@@ -39,7 +39,7 @@
 </body>
 
 <footer>
-    <a href="../"><h2 class="footer">&laquo; Retour en arrière</h2></a>
+    <!-- <a href="../"><h2 class="footer">&laquo; Retour en arrière</h2></a> -->
 </footer>
 <!-- footer -->
 <?php 

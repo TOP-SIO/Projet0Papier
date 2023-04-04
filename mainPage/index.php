@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>Projet0Papier / GKPT</title>
+        <title>Projet0Papier</title>
         <link rel="stylesheet" href="static/css/style.css">
     </head>
     <body>

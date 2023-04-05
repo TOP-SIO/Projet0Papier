@@ -19,14 +19,5 @@ Ce projet vise à créer une plateforme/application web qui facilite l'accès et
 
 ## Technologies utilisées
 
-- Front-end: HTML, CSS, JavaScript, React
-- Back-end: Node.js, Express, MongoDB
-- Authentification et gestion des droits utilisateurs: JWT, bcrypt
-
-## Comment contribuer
-
-Si vous souhaitez contribuer à ce projet, vous pouvez nous contacter à l'adresse suivante: [contact@cfafrop-issy.com](mailto:contact@cfafrop-issy.com).
-
-## Licence
-
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus d'informations.
+- Front-end: HTML, CSS, PHP
+- Back-end: PHP, MySQL

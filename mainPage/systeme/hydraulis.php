@@ -18,7 +18,7 @@
     ?>
 
     <div class="container">
-        <h1>Déscription génerale</h1>
+        <h1>Description générale</h1>
 
         <?php
             $requete_sql = "SELECT * FROM `doc_technique` WHERE `id_Systeme` = 2 ;";

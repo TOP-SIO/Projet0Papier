@@ -32,7 +32,7 @@ $machines = getSystems();
             <h3><?php echo $machine['description'] ?></h3>
             <p><?php echo $machine['description'] ?></p>
             <h4></h4>
-            <button type="button" onclick="location.href='<?php echo BASE_URL. '/HTML/'. $machine['lien']?>'"> Voir <?php echo $machine['nom_systeme'] ?></button>
+            <button type="button" onclick="location.href='<?php echo BASE_URL. '/systeme/'. $machine['lien']?>'"> Voir <?php echo $machine['nom_systeme'] ?></button>
         </div>
         <div class="col-2">
             <img class="bigThumbnail" src="<?php echo BASE_URL. '/static/images/photo_machines/'. $machine['photo']?>">

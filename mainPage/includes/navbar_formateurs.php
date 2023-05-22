@@ -10,4 +10,4 @@
         </nav>
         <img src="<?php echo BASE_URL."/static/images/logo ecole.png"?>" class="thumbnail">
     </body>
-</html><
+</html>

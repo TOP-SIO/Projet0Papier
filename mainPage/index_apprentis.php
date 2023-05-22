@@ -10,7 +10,7 @@
 <!-- Contenu de la page -->
 <!-- Barre de navigation -->
 
-<?php  include(ROOT_PATH.'/includes/navbar.php'); ?>
+<?php  include(ROOT_PATH.'/includes/navbar_apprentis.php'); ?>
 
 <!-- // Barre de navigation-->
 <br> <br>

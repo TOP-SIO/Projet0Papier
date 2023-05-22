@@ -2,11 +2,13 @@
 
 *{
     --background: #FFF;
+    --textColor: #fff;
     --textColorB7: #e7e7e7;
     --dark: #000;
     --blue: #0000bd;
     --darkblue: #000080;
     --red : #F00;
+    --lightRed : #ff8585;
     --lightDark: #222;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -27,9 +29,6 @@
     display: block;
     width: 61px;
     margin-left: auto;
-    margin-right: 1%;
-    margin-top: .3%;
-    margin-bottom: .3%;
 }
 
 .navbar {
@@ -37,9 +36,31 @@
     position: fixed;
     width: 100%;
     background: var(--darkblue);
-    margin-top: -0.5rem;
+    margin-top: -.5rem;
     margin-left: -.5rem;
     z-index: 1;
+}
+
+.navbar .list {
+    float: right;
+    margin-right: 10px;
+    list-style: none;
+    margin-top: .3%;
+    margin-bottom: .3%;
+}
+
+.navbar .list .a{
+    display: flex;
+    text-decoration: none;
+    color: var(--textColor);
+    margin-top: 21px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .list a:hover{
+    color: var(--textColorB7);
+    text-decoration: underline;
 }
 
 /*fin de  navbar */
@@ -54,17 +75,30 @@ form fieldset{
     border-radius: 30px;
     width: 50%;
     position: absolute;
-    top: 35%;
+    top: 45%;
+    left: 24.6%;
+    margin: -25px 0 0 auto;
+}
+
+.Error{
+    padding: 5px;
+    color:var(--dark);
+    border: 0px solid var(--textColorB7);
+    background-color: var(--lightRed);
+    border-radius: 30px;
+    width: 50%;
+    position: absolute;
+    top: 32%;
     left: 24.6%;
     margin: -25px 0 0 auto;
 }
 
 .thumbnail3{
-    padding-top: 0px;
+    padding-top: 1%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 500px;
 }
 
 /* logo top sio en bas de page */
@@ -136,15 +170,23 @@ form fieldset{
     font-size: 120%;
     border-radius: 15px;
 }
-/*
+
 .Text2{
     color: var(--dark);
     font-size: 150%;
-    background-color: var(--textColorB7);
+    background-color: var(--lightRed);
     font-weight: 100;
-    margin: 10px 0;
+    margin: 10px auto;
 }
 
+.Text3{
+    color: var(--dark);
+    font-size: 100%;
+    background-color: var(--lightRed);
+    font-weight: 100;
+    margin: 10px auto;
+}
+/*
 .Title{
     color: var(--background);
     font-size: 300%;
@@ -203,7 +245,7 @@ form fieldset{
     align-content: center;
     margin: 20px;
     width: auto;
-    height: auto;
+    height: 400px;
     padding: 2rem;
     box-shadow: 0 0 40px rgba(0, 0, 0, .5);
     border-radius: 10px;
@@ -311,8 +353,13 @@ footer {
     width: 95%;
     background-color: var(--darkblue);
     border-radius: 20px;
-    color: white;
+    color: var(--textColor);
     text-align: center;
+}
+
+.footer a {
+    color: var(--textColor);
+    text-decoration: none;
 }
 
 /*fin de footer  */

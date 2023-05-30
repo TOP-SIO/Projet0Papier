@@ -58,10 +58,8 @@
     display: flex;
     text-decoration: none;
     color: var(--textColor);
-    margin-top: 21px;
     align-items: center;
     justify-content: center;
-    margin-right: 50px;
     
 }
 

@@ -13,7 +13,7 @@ include "../config.php";
 
         $hash_password = password_hash($password, PASSWORD_DEFAULT);
         fichier_login();
-        $sql = "INSERT INTO `utilisateurs`(`nom_utilisateur`, `email`, `password`,`date_debut`,`date_fin`) VALUES ('$nom_utilisateur','$email', '$hash_password', now(), DATE_ADD(now(), INTERVAL 2 YEAR))";
+        $sql = "INSERT INTO `utilisateurs`(`nom_utilisateur`, `email`, `mdp_utilisateur`,`date_debut`,`date_fin`) VALUES ('$nom_utilisateur','$email', '$hash_password', now(), DATE_ADD(now(), INTERVAL 2 YEAR))";
         
         // $result = mysqli_query($connect , $sql);
         $result = $connect->query("SELECT * FROM `utilisateurs` WHERE email='$email'");

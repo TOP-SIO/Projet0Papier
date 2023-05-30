@@ -2,7 +2,7 @@
 
 include "../config.php";
 include "../includes/public_functions.php";
-include "gestion_edutiant_func.php";
+include "gestion_etudiant_func.php";
 
 ?>
 
@@ -31,7 +31,7 @@ include "gestion_edutiant_func.php";
 
         <div class="container  justify-content-center ">
 
-        <form action="gestion_edutiant_func.php" method="post" style="width:10vw; min-width:700px;">
+        <form action="gestion_etudiant_func.php" method="post" style="width:10vw; min-width:700px;">
                 
                 <div class="col mb-3 pr-50">
                     <label class="form-label">Nom Utilisteur </label>

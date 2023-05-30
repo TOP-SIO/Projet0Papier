@@ -1,13 +1,16 @@
-<nav class="navbar">
-    <div class="logo_div">
-        <style>
-            @import url('http://fonts.cdnfonts.com/css/valorant');
-            @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,900&display=swap');
-        </style>
-        <a href="index.php"><h1>GKPT</h1></a>
-    </div>
-    <ul> 
-        <li><a href="#news">Consulter un document</a></li>
-        <li><a href="depot_devoir.php">Déposer un devoir</a></li>
-    </ul>
-</nav>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="<?php echo BASE_URL."/static/css/style.css"?>">
+    </head>
+    <body>
+        <nav class="navbar">
+        <li class="list"><a href="<?php echo BASE_URL."/logout.php"?>"><img src="<?php echo BASE_URL."/static/images/disconnect.png"?>" class="thumbnail2"></a></li>
+        <li class="list"><a href="<?php echo BASE_URL."/admin/ajouter_devoir.php"?>">Déposer un devoir</a></li>
+        <li class="list"><a href="<?php echo BASE_URL."/admin/ajouter_document.php"?>">Déposer un document</a></li>
+        
+        </nav>
+        <img src="<?php echo BASE_URL."/static/images/logo ecole.png"?>" class="thumbnail">
+    </body>
+</html>

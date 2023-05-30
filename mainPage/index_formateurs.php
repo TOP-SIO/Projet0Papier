@@ -4,6 +4,24 @@
     include(ROOT_PATH. '/includes/public_functions.php');
 ?>
 
+<?php
+
+// Vérifier si l'utilisateur est connecté
+if(!isset($_SESSION['id_utilisateur']) || !isset($_SESSION['statut'])) {
+    echo "Vous devez être connecté pour voir cette page. Vous serez redirigé dans 3 secondes.";
+    header("refresh:3;url=".BASE_URL.'/');
+    exit();
+}
+
+// Vérifier le statut de l'utilisateur
+if($_SESSION['statut'] != 1) {
+    echo "Accès refusé. Vous serez redirigé dans 3 secondes.";
+    header("refresh:3;url=".BASE_URL.'/index_apprentis.php');
+    exit();
+}
+
+?>
+
     <title>Projet0Papier | Accueil | Formateurs</title>
     </head>
 

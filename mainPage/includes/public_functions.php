@@ -1,5 +1,5 @@
 <?php 
-
+include "../config.php";
 /* * * * * * * * * * * * * * *
 * Renvoie tous les systèmes
 * * * * * * * * * * * * * * */
@@ -54,7 +54,7 @@ function add_user(){
 
     $hash_password = password_hash($password, PASSWORD_DEFAULT);
 
-    fichier_login();
+    // fichier_login();
 
     $sql = "INSERT INTO `utilisateurs`(`nom_utilisateur`, `prenom_utilisateur`, `email`, `mdp_utilisateur`, `date_debut`, `date_fin` ) VALUES ('$nom_utilisateur','$email', '$hash_password', now(), );";
     // echo $sql;
@@ -85,12 +85,12 @@ function delete_user(){
     Fichier de login
 */
 
-function fichier_login(){
-    global $email;
-    global $password;
-    $Ligne = "Email : ".$email."\x20 , \x20 Mot de passe : ".$password."\n";
-    file_put_contents("Login_Apprentis.csv",$Ligne, FILE_APPEND);
-}
+// function fichier_login(){
+//     global $email;
+//     global $password;
+//     $Ligne = "Email : ".$email."\x20 , \x20 Mot de passe : ".$password."\n";
+//     file_put_contents("Login_Apprentis.csv",$Ligne, FILE_APPEND);
+// }
 
 // Valider le  mot de passe
 

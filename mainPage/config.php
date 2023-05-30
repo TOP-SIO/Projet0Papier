@@ -1,6 +1,6 @@
 <?php
     define('ROOT_PATH', realpath(dirname(__FILE__)));
-    define('BASE_URL', 'http://localhost/Projet0Papier/mainPage');
+    define('BASE_URL', 'http://localhost:8888/mainPage/');
 
     session_start();
     $host = 'localhost';
@@ -11,5 +11,8 @@
 
     if (!$connect){
         die("Error connecting to database: ".mysqli_connect_error());
+    }
+    else{
+        echo"okeee";
     }
 ?>

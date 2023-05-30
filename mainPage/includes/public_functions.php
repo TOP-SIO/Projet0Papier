@@ -41,28 +41,61 @@ function getUSer_eleve(){
 /*
     Ajout utilisateur
 */ 
-function add_user(){
-    global $email;
-    global $password;
-    global $connect;
+function add_user()
+{
+	// global $connect;s
+	if(isset($_POST['submit'])){
+        global $email;
+        global $password;
+        
+        $nom_utilisateur = $_POST['nom_utilisateur'];
+        $email = $_POST['email'];
 
-    $nom_utilisateur = $_POST['nom_utlisataeur'];
-    $email = $_POST['email'];
+        $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&!?%';
+        $password = substr(str_shuffle($alphabet),0,8);
 
-    $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&!?%';
-    $password = substr(str_shuffle($alphabet),0,8);
+        $hash_password = password_hash($password, PASSWORD_DEFAULT);
 
-    $hash_password = password_hash($password, PASSWORD_DEFAULT);
+        $sql = "INSERT INTO `utilisateurs`(`nom_utilisateur`, `email`, `password`,`date_debut`,`date_fin`) VALUES ('$nom_utilisateur','$email', '$hash_password', now(), DATE_ADD(now(), INTERVAL 2 YEAR))";
+        
+        // $result = mysqli_query($connect , $sql);
+        $result = $connect->query("SELECT * FROM `utilisateurs` WHERE email='$email'");
+        $row = $result->fetch_row();
+        if ($row[0] > 0) {
+          echo "<script>alert(\"Cet email est déjà utilisé pour un autre compte.\")</script>";
+        }
+        elseif($connect->query($sql) === TRUE) {
+            echo "<script>alert(\"L'utilisateur a été ajouté avec succès.\")</script>";
+          } 
+        else {
+            echo "Failed: " . mysqli_error($connect);
+        }
 
-    // fichier_login();
-
-    $sql = "INSERT INTO `utilisateurs`(`nom_utilisateur`, `prenom_utilisateur`, `email`, `mdp_utilisateur`, `date_debut`, `date_fin` ) VALUES ('$nom_utilisateur','$email', '$hash_password', now(), );";
-    // echo $sql;
-
-    $result = mysqli_query($connect , $sql);
-    return $result;
-
+    }
 }
+
+// {
+//     global $email;
+//     global $password;
+//     global $connect;
+
+//     $nom_utilisateur = $_POST['nom_utlisataeur'];
+//     $email = $_POST['email'];
+
+//     $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&!?%';
+//     $password = substr(str_shuffle($alphabet),0,8);
+
+//     $hash_password = password_hash($password, PASSWORD_DEFAULT);
+
+//     // fichier_login();
+
+//     $sql = "INSERT INTO `utilisateurs`(`nom_utilisateur`, `prenom_utilisateur`, `email`, `mdp_utilisateur`, `date_debut`, `date_fin` ) VALUES ('$nom_utilisateur','$email', '$hash_password', now(), );";
+//     // echo $sql;
+
+//     $result = mysqli_query($connect , $sql);
+//     return $result;
+
+// }
 
 /*
     Suppression utilisateur

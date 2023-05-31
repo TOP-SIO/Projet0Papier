@@ -1,14 +1,8 @@
 <?php
-
     include "../config.php";
     include(ROOT_PATH. './includes/public_functions.php');
-    include(ROOT_PATH.'././includes/navbar_apprentis.php'); 
     include(ROOT_PATH.'.upload.php'); 
-    
 ?>
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">

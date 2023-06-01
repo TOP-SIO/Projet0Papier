@@ -1,9 +1,9 @@
 <?php
     define('ROOT_PATH', realpath(dirname(__FILE__)));
-    define('BASE_URL', 'http://localhost/Projet0Papier/mainPage');
+    define('BASE_URL', 'http://192.168.120.51');
 
     session_start();
-    $host = 'localhost';
+    $host = '192.168.120.51';
     $user = 'root';
     $passwd = 'root';
     $bdd = 'projet_site';

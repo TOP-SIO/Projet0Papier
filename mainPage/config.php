@@ -3,7 +3,7 @@
     define('BASE_URL', 'http://192.168.120.51');
 
     session_start();
-    $host = '192.168.120.51';
+    $host = 'localhost';
     $user = 'root';
     $passwd = '0Papier';
     $bdd = 'projet_site';

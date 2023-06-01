@@ -5,7 +5,7 @@
     session_start();
     $host = '192.168.120.51';
     $user = 'root';
-    $passwd = '0papier';
+    $passwd = '0Papier';
     $bdd = 'projet_site';
     $connect = mysqli_connect($host, $user, $passwd, $bdd);
 

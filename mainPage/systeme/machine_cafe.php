@@ -34,7 +34,7 @@
             // print_r($resultat_requete);
 
             foreach($resultat_requete as $document){
-                $chemin_acces_pdf = "../".$document["chemin"];
+                $chemin_acces_pdf = "/".$document["chemin"];
                 // echo $chemin_acces_pdf;
                 ?>
                 <iframe src="<?php echo $chemin_acces_pdf; ?>" class="iframe_machinecafe"></iframe>

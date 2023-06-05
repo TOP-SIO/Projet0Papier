@@ -22,9 +22,15 @@ include "../config.php";
         $password = substr(str_shuffle($alphabet),0,8);
 
         $hash_password = password_hash($password, PASSWORD_DEFAULT);
+<<<<<<< HEAD:mainPage/admin/gestion_edutiant_func.php
 
         $sql = "INSERT INTO `utilisateurs`(`nom_utilisateur`, `email`, `password`,`date_debut`,`date_fin`) VALUES ('$nom_utilisateur','$email', '$hash_password', now(), DATE_ADD(now(), INTERVAL 2 YEAR))";
          fichier_login();
+=======
+        fichier_login();
+        $sql = "INSERT INTO `utilisateurs`(`nom_utilisateur`, `email`, `mdp_utilisateur`,`date_debut`,`date_fin`) VALUES ('$nom_utilisateur','$email', '$hash_password', now(), DATE_ADD(now(), INTERVAL 2 YEAR))";
+        
+>>>>>>> 774f9d254384988088e63a08df18287b979a05a1:mainPage/admin/gestion_etudiant_func.php
         // $result = mysqli_query($connect , $sql);
         $result = $connect->query("SELECT * FROM `utilisateurs` WHERE email='$email'");
         $row = $result->fetch_row();

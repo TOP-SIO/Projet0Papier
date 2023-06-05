@@ -23,6 +23,8 @@
                 <p class="Text">Authentification</p> 
                 <input type="email" class="required" name="mail" size="20" placeholder="Identifiant" required/>
                 <input type="password" class="required" name="password" size="20" placeholder="Mot de passe" required/>
+                <br>
+                <label for="forgotpassword"><a href="oublie.php">Mot de passe oublié ?</a></label>
                 <br/>
                 <input type="submit" class="button" value='Se connecter'/>
             </fieldset>

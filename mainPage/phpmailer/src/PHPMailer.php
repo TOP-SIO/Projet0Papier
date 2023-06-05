@@ -542,7 +542,9 @@ class PHPMailer
      * Callback Action function name.
      *
      * The function that handles the result of the send email action.
-     * It is called out by send() for each email sent.
+     * It is called out by 
+     * 
+     * () for each email sent.
      *
      * Value can be any php callable: http://www.php.net/is_callable
      *
@@ -1520,6 +1522,7 @@ class PHPMailer
             if ($this->exceptions) {
                 throw $exc;
             }
+            
 
             return false;
         }

@@ -200,7 +200,7 @@ else
        er="keyup" class="form-control" />
       </div>
       <div class="form-group">
-       <input type="submit" id="login" name="pwdrst" value="Enoyé Lien de renouvellement de mot de passe" class="btn btn-success" />
+       <input type="submit" id="login" name="pwdrst" value="Envoyer lien de renouvelement de mot de passe" class="btn btn-success" />
        </div>
        
        <p class="error"><?php if(!empty($msg)){ echo $msg; } ?></p>

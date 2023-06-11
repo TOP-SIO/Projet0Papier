@@ -5,5 +5,5 @@
    session_regenerate_id();
    // destruction de la session en cours
    session_destroy();
-   header('location: ../');
+   header('location: ../index');
 ?>

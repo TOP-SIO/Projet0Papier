@@ -108,4 +108,53 @@ function check_mdp_format($MDP_Utilisateur)
             return true;
     }
 }
+
+
+
+function getUsersByClasse($classe_id) {
+    global $connect;
+
+    echo "Valeur de \$classeId : " . $classe_id . "<br>";
+
+    $sql = "SELECT utilisateurs.*
+    FROM utilisateurs
+    WHERE classe_id = '$classe_id'";
+
+
+    $result = $connect->query($sql);
+
+    $users = array();
+
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $users[] = $row;
+        }
+    }
+
+    return $users;
+}
+
+
+
+
+
+
+
+function getClasses() {
+    global $connect;
+
+    $sql = "SELECT * FROM classe";
+    $result = $connect->query($sql);
+
+    $classes = array();
+
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $classes[] = $row;
+        }
+    }
+
+    return $classes;
+}
+
 ?>
